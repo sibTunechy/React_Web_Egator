@@ -1,7 +1,10 @@
 import React from 'react'
 import './header.css'
+import CV from '../../assets/cv.pdf'
+import { data } from '../../data'
 
 import Button from '../../tools/Button/Button'
+import Socials from '../../tools/Socials/Socials'
 export default function Header() {
   return (
     <header>
@@ -10,7 +13,18 @@ export default function Header() {
       <h1>Adams Albarka</h1>
       <h5 className='text-light'> Fullstack Developer</h5>
      </div>
-     <Button />
+     <Button>
+     <a href={CV} download className='btn'> Download CV </a>
+     <a href='#contact' className='btn btn-primary'> Let's Talk </a>
+     </Button>
+     <Socials />
+
+     <div className="me">
+      <img src={data.imag} alt="me" />
+     </div>
+
+     <a href="#contact" className='scroll__down'>Scroll Down</a>
+
     </header>
   )
 }
