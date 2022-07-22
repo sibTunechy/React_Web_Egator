@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
     BsLinkedin,
-    BsFacebook,
     BsTwitter,
     BsWhatsapp
  } from "react-icons/bs";

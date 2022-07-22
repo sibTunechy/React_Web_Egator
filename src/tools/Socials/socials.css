@@ -6,7 +6,7 @@
     position: absolute;
     left: 0;
     bottom: 3rem;
-    margin: 0 10rem;
+    margin: 0 3rem;
 }
 .socials::after{
     content: " ";
@@ -14,3 +14,10 @@
     height: 2rem;
     background: var(--color-primary);
 }
+
+/* ===== MEDIA QUERIES MOBILE ===== */
+@media screen and (max-width: 600px) {
+    .socials{
+      display: none;
+    }
+  }
