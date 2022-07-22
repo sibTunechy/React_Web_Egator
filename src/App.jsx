@@ -8,6 +8,7 @@ import Portfolio from './Components/portfolio/Portfolio'
 import Testimonials from './Components/testimonials/Testimonials'
 import Contact from './Components/contact/Contact'
 import Footer from './Components/footer/Footer'
+import './index.css'
 const App = () => {
   return (
     <div className='App'>
