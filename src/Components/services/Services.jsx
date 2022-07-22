@@ -3,8 +3,8 @@ import './services.css'
 
 export default function Services() {
   return (
-    <div className='services'>
+    <section className='services' id='services'>
       Hello Services
-    </div>
+    </section>
   )
 }
