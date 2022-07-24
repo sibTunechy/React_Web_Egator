@@ -1,13 +1,14 @@
 import React from 'react'
 import './about.css'
-import { data } from '../../data'
+import { data, cardData } from '../../data'
 import Button from '../../tools/Button/Button'
 import { BsFillJournalBookmarkFill } from 'react-icons/bs'
+
 export default function About() {
   return (
     <section className='about' id='about'>
       <h5>Get to know Herr Adams</h5>
-      <h1>I write and speak 5 Languages</h1>
+      <h2>I write and speak 5 Languages</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -18,11 +19,14 @@ export default function About() {
 
       <div className="about__content">
         <div className="about__cards">
+          {cardData.map((item) => (
           <article className="about__card">
-            <BsFillJournalBookmarkFill className='about__icon' />
-            <h5>Experience</h5>
-            <small>3 + Years</small>
+            <span className='about__icon'>{item.icon}</span>
+            <h5>{item.title}</h5>
+            <small>{item.year}</small>
           </article>
+          ))}
+
         </div>
 
         <p>
