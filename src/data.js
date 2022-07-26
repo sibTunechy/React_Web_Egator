@@ -4,6 +4,8 @@ import { IoLanguageSharp } from 'react-icons/io5'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import { FaAward, FaChalkboardTeacher } from 'react-icons/fa'
 import { GiTeacher } from 'react-icons/gi'
+import { HiPencil } from 'react-icons/hi';
+import { MdCodeOff } from 'react-icons/md'
 
 export const data = {
     imag: ME,
@@ -20,19 +22,32 @@ export const expFrontEndData = [
     {
         icon: <BsPatchCheckFill />, 
         progLang: "HTML", 
-        experience: "Well-Experienced" 
+        experience: "Experienced" 
     },
     {
         icon: <BsPatchCheckFill />, 
         progLang: "CSS", 
-        experience: "Well-Experienced",
-        framewrk: "Bootstrap & Tailwind"
+        experience: "Experienced",
+    },
+    {
+        icon: <BsPatchCheckFill />, 
+        progLang: "Bootstrap", 
+        experience: "Advanced",
+    },
+    {
+        icon: <BsPatchCheckFill />, 
+        progLang: "Tailwind", 
+        experience: "Advanced",
     },
     {
         icon: <BsPatchCheckFill />, 
         progLang: "JS", 
         experience: "Advanced",
-        framewrk: "ReactJS"
+    },
+    {
+        icon: <BsPatchCheckFill />, 
+        progLang: "ReactJS", 
+        experience: "Advanced",
     },
 
 ]
@@ -63,4 +78,67 @@ export const expBackEndData = [
         progLang: "PHP", 
         experience: "Basics" 
     },
+]
+
+export const servicesListWrite = [
+    {
+        icon: <HiPencil />, 
+        text: "Grammar Check " 
+    },
+    {
+        icon: <HiPencil />, 
+        text: "Accuracy with expression " 
+    },
+    {
+        icon: <HiPencil />, 
+        text: "Lorem, ipsum dolor sitr " 
+    },
+    {
+        icon: <HiPencil />, 
+        text: "Lorem, ipsum dolor sit  " 
+    },
+   
+]
+export const servicesListWeb = [
+    {
+        icon: <MdCodeOff />, 
+        text: "Lorem, ipsum dolor sit " 
+    },
+    {
+        icon: <MdCodeOff />, 
+        text: "Lorem, ipsum dolor sit " 
+    },
+    {
+        icon: <MdCodeOff />, 
+        text: "Lorem, ipsum dolor sit " 
+    },
+    {
+        icon: <MdCodeOff />, 
+        text: "Lorem, ipsum dolor sit " 
+    },
+    {
+        icon: <MdCodeOff />, 
+        text: "Lorem, ipsum dolor sit  " 
+    },
+    
+]
+export const servicesListTeach = [
+    {
+        icon: <FaChalkboardTeacher />, 
+        text: "German Language Teaching" 
+    },
+    {
+        icon: <FaChalkboardTeacher />, 
+        text: "French Language Teaching" 
+    },
+    {
+        icon: <FaChalkboardTeacher />, 
+        text: "English Language Teaching" 
+    },
+    {
+        icon: <FaChalkboardTeacher />, 
+        text: "Yoruba Basic Language Teaching" 
+    },
+    
+    
 ]

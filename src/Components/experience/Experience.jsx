@@ -15,10 +15,10 @@ export default function experience() {
         {expFrontEndData.map((item) =>(
             <article className="experience__details">
               <span className='experience__details-icon'>{item.icon}</span>
-              <h4>{item.progLang}</h4>
               <div>
-              <small className='text-light'>{item.experience}</small>
-              <small className="text-light">{item.framewrk}</small>
+              <h4>{item.progLang}</h4>
+              <small className='text-light'>{item.experience}</small>      
+              {/* <small className="text-light">{item.framewrk}</small> */}
               </div>
             </article>
             ))}
@@ -27,14 +27,16 @@ export default function experience() {
         <div className="experience__backend">
         <h3>BACKEND DEVELOPMENT</h3>
           <div className="experience__content">
+            {expBackEndData.map((item) => (
             <article className="experience__details">
-            <BsPatchCheckFill className='experience__details-icon' />
-              <h4>HTML</h4>
+              <span className='experience__details-icon'>{item.icon}</span>
               <div>
-              <small className='text-light'>Experienced</small>
+              <h4>{item.progLang}</h4>
+              <small className='text-light'>{item.experience}</small>
               <small className="text-light"></small>
               </div>
             </article>
+              ))}
           </div>
         </div>
         </div>
