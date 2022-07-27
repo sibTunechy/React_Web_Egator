@@ -6,6 +6,12 @@ import { FaAward, FaChalkboardTeacher } from 'react-icons/fa'
 import { GiTeacher } from 'react-icons/gi'
 import { HiPencil } from 'react-icons/hi';
 import { MdCodeOff } from 'react-icons/md'
+import IMG1 from './assets/portfolio1.jpg'
+import IMG2 from './assets/portfolio2.jpg'
+import IMG3 from './assets/portfolio3.jpg'
+import IMG4 from './assets/portfolio4.jpg'
+import IMG5 from './assets/portfolio5.png'
+import IMG6 from './assets/portfolio6.jpg'
 
 export const data = {
     imag: ME,
@@ -141,4 +147,39 @@ export const servicesListTeach = [
     },
     
     
+]
+export const portfolioData = [
+
+    {
+        img: IMG1,
+        text: "Lorem, ipsum dolor sit "
+    },
+
+
+    {
+        img: IMG2,
+        text: "Lorem, ipsum dolor sit "
+    },
+
+    
+    {
+        img: IMG3,
+        text: "Lorem, ipsum dolor sit "
+    },
+
+    
+    {
+        img: IMG4,
+        text: "Lorem, ipsum dolor sit "
+    },
+    
+    {
+        img: IMG5,
+        text: "Lorem, ipsum dolor sit "
+    },
+    {
+        img: IMG6,
+        text: "Lorem, ipsum dolor sit "
+    },
+
 ]

@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG from '../../assets/portfolio1.jpg'
 import Button from '../../tools/Button/Button'
+import { portfolioData } from '../../data'
 
 export default function Portfolio() {
   return (
@@ -10,17 +11,19 @@ export default function Portfolio() {
      <h2> Portfolio </h2>
 
      <div className="container portfolio__container">
-      <article className="portfolio__item">
+      {portfolioData.map((item) => (
+        <article className="portfolio__item">
         <div className="portfolio__item-image">
-          <img src={IMG} alt="" />
+          <img src={item.img} alt="" />
         </div>
 
-        <h3>This is a portfolio Item title</h3>
+        <h3>{item.text}</h3>
         <Button className='cta'>
           <a href="" className='btn' target='_blank'>GitHub</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
         </Button>
       </article>
+        ))}
      </div>
     </section>
   )
