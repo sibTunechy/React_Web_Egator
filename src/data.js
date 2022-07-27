@@ -13,6 +13,12 @@ import IMG4 from './assets/portfolio4.jpg'
 import IMG5 from './assets/portfolio5.png'
 import IMG6 from './assets/portfolio6.jpg'
 
+import AVT1 from './assets/avatar1.jpg'
+import AVT2 from './assets/avatar2.jpg'
+import AVT3 from './assets/avatar3.jpg'
+import AVT4 from './assets/avatar4.jpg'
+
+
 export const data = {
     imag: ME,
     imag2: MeAbout,
@@ -182,4 +188,31 @@ export const portfolioData = [
         text: "Lorem, ipsum dolor sit "
     },
 
+]
+
+export const testimonialData = [
+
+    {
+        avatar: AVT1,
+        name: 'Daves Martins',
+        text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
+    },
+
+    {
+        avatar: AVT2,
+        name: 'Sam Drey',
+        text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
+    },
+
+    {
+        avatar: AVT3,
+        name: 'Steve Lubem',
+        text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
+    },
+
+    {
+        avatar: AVT4,
+        name: 'Moremi James',
+        text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
+    },
 ]

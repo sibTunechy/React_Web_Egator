@@ -1,29 +1,30 @@
 import React from 'react'
 import './testimonials.css'
-import AVT from '../../assets/avatar1.jpg'
-
+import { testimonialData } from '../../data';
+import { SwiperSlide } from 'swiper/react';
+import Slider from '../../tools/Slider/Slider'
 export default function Testimonials() {
   return (
     <section id='testimonials'>
       <h5> Client Testimonials </h5>
-      <h1> Reviews </h1>
+      <h2> Reviews </h2>
 
-      <div className="container testimonials__container">
-        <article className="testimonial">
+      <Slider className="container testimonials__container">
+        {testimonialData.map((item) => (
+
+          <SwiperSlide className="testimonial">
           <div className="client__avatar">
-            <img src={AVT} alt="" />
+            <img src={item.avatar} alt="" />
           </div>
             <h5 className="client__name">
-              Daves Scott
+              {item.name}
             </h5>
             <small className="client__review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias 
-              temporibus quos ducimus itaque voluptatum voluptas quo 
-              necessitatibus nihil ab nulla ipsa doloribus commodi earum, 
-              corporis impedit illum velit.
+            {item.text}
             </small>
-        </article>
-      </div>
+        </SwiperSlide>
+          ))}
+      </Slider>
     </section>
   )
 }
