@@ -1,7 +1,7 @@
 import React from 'react'
 import './testimonials.css'
 import { testimonialData } from '../../data';
-import { SwiperSlide } from 'swiper/react';
+import { SwiperSlide, Swiper } from 'swiper/react';
 import Slider from '../../tools/Slider/Slider'
 export default function Testimonials() {
   return (
@@ -9,9 +9,11 @@ export default function Testimonials() {
       <h5> Client Testimonials </h5>
       <h2> Reviews </h2>
 
-      <Slider className="container testimonials__container">
+      <Swiper 
+       spaceBetween={40}
+       pagination={{ clickable: true }}
+      className="container testimonials__container">
         {testimonialData.map((item) => (
-
           <SwiperSlide className="testimonial">
           <div className="client__avatar">
             <img src={item.avatar} alt="" />
@@ -23,8 +25,9 @@ export default function Testimonials() {
             {item.text}
             </small>
         </SwiperSlide>
+
           ))}
-      </Slider>
+      </Swiper>
     </section>
   )
 }
