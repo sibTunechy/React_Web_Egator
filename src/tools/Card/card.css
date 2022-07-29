@@ -1,0 +1,22 @@
+.cards{
+    display: grid;
+    grid-template-columns: inherit;
+    gap: 1.5rem;
+ }
+ 
+ .__card{
+    width: max-content;
+    margin: 0 auto;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+ }
+ .__card:hover{
+    background: transparent;
+    border: var(--color-primary-variant);
+    cursor: pointer;
+ }
+ 
