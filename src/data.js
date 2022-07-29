@@ -193,24 +193,28 @@ export const portfolioData = [
 export const testimonialData = [
 
     {
+        id: 1,
         avatar: AVT1,
         name: 'Daves Martins',
         text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
     },
 
     {
+        id: 2,
         avatar: AVT2,
         name: 'Sam Drey',
         text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
     },
 
     {
+        id: 3,
         avatar: AVT3,
         name: 'Steve Lubem',
         text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
     },
 
     {
+        id: 4,
         avatar: AVT4,
         name: 'Moremi James',
         text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
