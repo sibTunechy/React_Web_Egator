@@ -229,7 +229,7 @@ export const contactData = [
         id: 1,
         icon:  <MdOutlineEmail />,
         contctType: 'Email',
-        emailadrss: '',
+        emailadrss: 'adams@gmail.com',
         link: " mailto:adams.albarka@gmail.com"
     },
     {
