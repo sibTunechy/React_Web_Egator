@@ -1,22 +1,31 @@
 import React from 'react'
 import './contact.css'
 import Card from '../../tools/Card/Card'
-// import Button from '../../tools/Button/Button'
+import { contactData } from '../../data'
+import Form from '../../tools/Form/Form'
 
 export default function Contact() {
   return (
-    <section className='contact' id='contact'>
+    <section className='contact'>
       <h5>Get in Touch</h5>
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
-        <div className="contact__options">
-          <Card>
-            <h4>E-Mail</h4>
-            <h5>email@email.com</h5>
-              <a href="http://google.com"></a>
-          </Card>
+
+        {contactData.map(({id, icon, contctType, emailadrss, link})=>{
+          return(
+        <div key={id} className="contact__options">
+            <Card >
+              <span>{icon}</span>
+              <h4>{contctType}</h4>
+              <h5>{emailadrss}</h5>
+              <a href={link}>Send a Message</a>
+            </Card>
         </div>
+          )
+        })}
+
+      <Form />
       </div>
     </section>
   )

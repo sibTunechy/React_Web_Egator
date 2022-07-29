@@ -1,11 +1,13 @@
 import ME from './assets/me.png'
 import MeAbout from "./assets/me-about.jpg";
 import { IoLanguageSharp } from 'react-icons/io5'
-import { BsPatchCheckFill } from 'react-icons/bs'
+import { BsPatchCheckFill, BsWhatsapp } from 'react-icons/bs'
 import { FaAward, FaChalkboardTeacher } from 'react-icons/fa'
 import { GiTeacher } from 'react-icons/gi'
 import { HiPencil } from 'react-icons/hi';
-import { MdCodeOff } from 'react-icons/md'
+import { MdCodeOff, MdOutlineEmail } from 'react-icons/md'
+import { FiTwitter } from 'react-icons/fi'
+
 import IMG1 from './assets/portfolio1.jpg'
 import IMG2 from './assets/portfolio2.jpg'
 import IMG3 from './assets/portfolio3.jpg'
@@ -220,3 +222,29 @@ export const testimonialData = [
         text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
     },
 ]
+
+
+export const contactData = [
+    {
+        id: 1,
+        icon:  <MdOutlineEmail />,
+        contctType: 'Email',
+        emailadrss: '',
+        link: " mailto:adams.albarka@gmail.com"
+    },
+    {
+        id: 2,
+        icon:  <FiTwitter />,
+        contctType: 'Twitter',
+        emailadrss: '@Adams_albarka',
+        link: " https://twitter.com/adams_albarka "
+    },
+    {
+        id: 3,
+        icon:  <BsWhatsapp />,
+        contctType: 'WhatsApp',
+        emailadrss: "+2349036867997",
+        link: " https://api.whatsapp.com/send?phone=+2349036867997 "
+    },
+]
+
