@@ -1,5 +1,6 @@
 import React from 'react'
-import Socials from '../../tools/Socials/Socials'
+import { BsWhatsapp, BsLinkedin, BsFacebook, BsTwitter } from 'react-icons/bs'
+import './footer.css'
 export default function () {
   return (
     <footer className='footer'>
@@ -22,7 +23,7 @@ export default function () {
         <a href="http://whatsapp.com"><BsWhatsapp /></a>
       </div>
 
-      <div className="footer_copyright">
+      <div className="footer__copyright">
         <small> &copy; Adlers Adams. All right reserved </small>
       </div>
     </footer>
