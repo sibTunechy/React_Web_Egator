@@ -7,14 +7,27 @@ import emailjs from 'emailjs-com'
 
 
 export default function Form() {
-  // const form = useRef()
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_be6lizn', 'template_kgcxy07', form.current, 'UBnjsWujjqbIN-SNx')
+    .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+    e.target.reset();
+  };
+
   return (
-    <form action=''>
+    <form ref={form} onSubmit={sendEmail}>
       <input type="text" name="name" placeholder='YOUR FULL NAME' required />
       <input type="email" name="email" placeholder='YOUR EMAIL' required />
       <textarea name="text" rows="7" placeholder='Your Text Here'></textarea>
-      <Button type="submit">
-      <a href="" className='btn btn-primary'>SEND MESSAGE</a>
+      <Button >
+      <a type="submit" className='btn btn-primary'>SEND MESSAGE</a>
       </Button>
     </form>
   )
