@@ -19,8 +19,8 @@ export default function Portfolio() {
 
         <h3>{item.text}</h3>
         <Button className='cta'>
-          <a href="" className='btn' target='_blank'>GitHub</a>
-          <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="" className='btn' target='_blank' {...item.git}>GitHub</a>
+          <a href="" className='btn btn-primary' target='_blank'{...item.netlify}>Live Demo</a>
         </Button>
       </article>
         ))}

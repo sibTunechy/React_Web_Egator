@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/AhmedResume.pdf'
 import { data } from '../../data'
 
 import Button from '../../tools/Button/Button'
@@ -10,8 +10,8 @@ export default function Header() {
     <header className='header'>
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1>Adams Albarka</h1>
-        <h5 className='text-light'> Fullstack Developer</h5>
+        <h1>Ahmed Abdullahi</h1>
+        <h5 className='text-light'> FrontEnd Developer</h5>
         <Button>
         <a href={CV} download className='btn'> Download CV </a>
         <a href='#contact' className='btn btn-primary'> Let's Talk </a>

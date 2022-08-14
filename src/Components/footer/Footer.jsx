@@ -1,10 +1,10 @@
 import React from 'react'
-import { BsWhatsapp, BsLinkedin, BsFacebook, BsTwitter } from 'react-icons/bs'
+import { BsWhatsapp, BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 import './footer.css'
 export default function () {
   return (
     <footer className='footer'>
-      <a href="#" className='footer__logo' > ADLERS </a>
+      <a href="#" className='footer__logo' > AHMED </a>
 
       <ul className="permalinks">
         <li><a href="#">HOME</a></li>
@@ -17,14 +17,14 @@ export default function () {
       </ul>
 
       <div className="footer__social">
-        <a href="http://linkedin.com"><BsLinkedin /></a>
-        <a href="http://facebook.com"><BsFacebook /></a>
-        <a href="http://twitter.com"><BsTwitter /></a>
-        <a href="http://whatsapp.com"><BsWhatsapp /></a>
+        <a href="http://linkedin.com/in/ahm1"><BsLinkedin /></a>
+        <a href="http://github.com/sibTunechy"><BsGithub /></a>
+        <a href="https://twitter.com/Sib_tunechy"><BsTwitter /></a>
+        <a href="https://api.whatsapp.com/send?phone=+2348135163128"><BsWhatsapp /></a>
       </div>
 
       <div className="footer__copyright">
-        <small> &copy; Adlers Adams. All right reserved </small>
+        <small> &copy; Ahmed Abdullahi. All right reserved </small>
       </div>
     </footer>
   )

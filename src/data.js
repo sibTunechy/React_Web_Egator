@@ -1,22 +1,22 @@
-import ME from './assets/me.png'
-import MeAbout from "./assets/me-about.jpg";
+import ME from './assets/whats.jpeg';
+import MeAbout from "./assets/whats.jpeg";
 import { IoLanguageSharp } from 'react-icons/io5'
 import { BsPatchCheckFill, BsWhatsapp } from 'react-icons/bs'
 import { FaAward, FaChalkboardTeacher } from 'react-icons/fa'
-import { GiTeacher } from 'react-icons/gi'
+// import { GiTeacher } from 'react-icons/gi';
 import { HiPencil } from 'react-icons/hi';
 import { MdCodeOff, MdOutlineEmail } from 'react-icons/md'
 import { FiTwitter } from 'react-icons/fi'
 
-import IMG1 from './assets/portfolio1.jpg'
-import IMG2 from './assets/portfolio2.jpg'
-import IMG3 from './assets/portfolio3.jpg'
-import IMG4 from './assets/portfolio4.jpg'
-import IMG5 from './assets/portfolio5.png'
-import IMG6 from './assets/portfolio6.jpg'
+import IMG1 from './assets/Screenshotemg.png'
+import IMG2 from './assets/Screenshotdeliv.png'
+import IMG3 from './assets/Screenshotport.png'
+import IMG4 from './assets/Screenshotartscard.png'
+import IMG5 from './assets/Screenshotradio.png'
+import IMG6 from './assets/Screenshotchat.png'
 
-import AVT1 from './assets/avatar1.jpg'
-import AVT2 from './assets/avatar2.jpg'
+import AVT1 from './assets/omoebi.jpeg'
+import AVT2 from './assets/pointeradam.jpg'
 import AVT3 from './assets/avatar3.jpg'
 import AVT4 from './assets/avatar4.jpg'
 
@@ -27,15 +27,15 @@ export const data = {
 }
 
 export const cardData = [
-    { icon: <IoLanguageSharp />, title: "Langauge Skill", year: "Over 4 + Years" },
+    { icon: <IoLanguageSharp />, title: "JavaScript Skill", year: "Over 4 + Years" },
     { icon: <FaAward />, title: "React Development", year: "2 + Years" },
-    { icon: <GiTeacher />, title: "Teaching Skill", year: "4 + Years" },
+    // { icon: <GiTeacher />, title: "Teaching Skill", year: "4 + Years" },
   ];
 
 export const expFrontEndData = [
     {
         icon: <BsPatchCheckFill />, 
-        progLang: "HTML", 
+        progLang: "HTML5", 
         experience: "Experienced" 
     },
     {
@@ -50,12 +50,12 @@ export const expFrontEndData = [
     },
     {
         icon: <BsPatchCheckFill />, 
-        progLang: "Tailwind", 
+        progLang: "Material-UI", 
         experience: "Advanced",
     },
     {
         icon: <BsPatchCheckFill />, 
-        progLang: "JS", 
+        progLang: "JavaScript", 
         experience: "Advanced",
     },
     {
@@ -63,19 +63,24 @@ export const expFrontEndData = [
         progLang: "ReactJS", 
         experience: "Advanced",
     },
-
+    {
+        icon: <BsPatchCheckFill/>,
+        progLang: "Responsiveness",
+        experience: "Advanced",
+    },
+    {
+        icon: <BsPatchCheckFill/>,
+        progLang: "Styled-Components",
+        experience: "Advanced",
+    },
 ]
 
 export const expBackEndData = [
-    {
-        icon: <BsPatchCheckFill />, 
-        progLang: "Python", 
-        experience: "Basics" 
-    },
+  
     {
         icon: <BsPatchCheckFill />, 
         progLang: "MYSQL", 
-        experience: " Intermediate " 
+        experience: "Basic" 
     },
     {
         icon: <BsPatchCheckFill />, 
@@ -89,69 +94,73 @@ export const expBackEndData = [
     },
     {
         icon: <BsPatchCheckFill />, 
-        progLang: "PHP", 
-        experience: "Basics" 
+        progLang: "Express", 
+        experience: "Experienced" 
     },
 ]
 
 export const servicesListWrite = [
     {
-        icon: <HiPencil />, 
-        text: "Grammar Check " 
+        icon: <FaChalkboardTeacher/>, 
+        text: "Asynchronous Communication" 
     },
     {
-        icon: <HiPencil />, 
-        text: "Accuracy with expression " 
+        icon: <FaChalkboardTeacher/>, 
+        text: "Dev Tool Debugging" 
     },
     {
-        icon: <HiPencil />, 
-        text: "Lorem, ipsum dolor sitr " 
+        icon: <FaChalkboardTeacher/>, 
+        text: "Traversing the DOM" 
     },
     {
-        icon: <HiPencil />, 
-        text: "Lorem, ipsum dolor sit  " 
+        icon: <FaChalkboardTeacher/>, 
+        text: "Conditional Statements" 
     },
+    {
+        icon: <FaChalkboardTeacher/>,
+        text: "API Calls"
+    }
    
 ]
 export const servicesListWeb = [
     {
         icon: <MdCodeOff />, 
-        text: "Lorem, ipsum dolor sit " 
+        text: "React Hooks" 
     },
     {
         icon: <MdCodeOff />, 
-        text: "Lorem, ipsum dolor sit " 
+        text: "JSX" 
     },
     {
         icon: <MdCodeOff />, 
-        text: "Lorem, ipsum dolor sit " 
+        text: "Redux" 
     },
     {
         icon: <MdCodeOff />, 
-        text: "Lorem, ipsum dolor sit " 
+        text: "Material UI" 
     },
     {
         icon: <MdCodeOff />, 
-        text: "Lorem, ipsum dolor sit  " 
+        text: "Virtual DOM" 
     },
     
 ]
 export const servicesListTeach = [
     {
         icon: <FaChalkboardTeacher />, 
-        text: "German Language Teaching" 
+        text: "Non Blocking code" 
     },
     {
         icon: <FaChalkboardTeacher />, 
-        text: "French Language Teaching" 
+        text: "Event Loops" 
     },
     {
         icon: <FaChalkboardTeacher />, 
-        text: "English Language Teaching" 
+        text: "Global Variables" 
     },
     {
         icon: <FaChalkboardTeacher />, 
-        text: "Yoruba Basic Language Teaching" 
+        text: "Express" 
     },
     
     
@@ -160,34 +169,46 @@ export const portfolioData = [
 
     {
         img: IMG1,
-        text: "Lorem, ipsum dolor sit "
+        text: "Elizabeth Matthew Group App",
+        git: "https://github.com/sibTunechy/emg",
+        netlify: "https://mge-app.netlify.app/"
     },
 
 
     {
         img: IMG2,
-        text: "Lorem, ipsum dolor sit "
+        text: "Delivery App",
+        git: "https://github.com/sibTunechy/Deliveree",
+        netlify: "https://deliveree.netlify.app/"
     },
 
     
     {
         img: IMG3,
-        text: "Lorem, ipsum dolor sit "
+        text: "Portfolio Website",
+        git: "https://github.com/sibTunechy/portfolioupd",
+        netlify: "https://updportfolio.netlify.app/"
     },
 
     
     {
         img: IMG4,
-        text: "Lorem, ipsum dolor sit "
+        text: "Artisan Cards",
+        git: "ttps://github.com/sibTunechy/Artisans",
+        netlify: "https://artscards.netlify.app/"
     },
     
     {
         img: IMG5,
-        text: "Lorem, ipsum dolor sit "
+        text: "Radio Web App",
+        git: "https://github.com/sibTunechy/tested",
+        netlify: "https://radiotestapp.netlify.app/"
     },
     {
         img: IMG6,
-        text: "Lorem, ipsum dolor sit "
+        text: "Chat App",
+        git: "https://github.com/sibTunechy/chatengineapp",
+        netlify: "https://chatappwithchatengine.netlify.app/"
     },
 
 ]
@@ -197,15 +218,15 @@ export const testimonialData = [
     {
         id: 1,
         avatar: AVT1,
-        name: 'Daves Martins',
-        text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
+        name: 'Shabi Moshood',
+        text: "An experienced React JS Frontend Developer who as a friend and hard worker, we worked on a project together and I can ascertain that he is a team player. "
     },
 
     {
         id: 2,
         avatar: AVT2,
-        name: 'Sam Drey',
-        text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae molestias temporibus quos ducimus itaque voluptatum voluptas quo  necessitatibus nihil ab nulla ipsa doloribus commodi earum, corporis impedit illum velit."
+        name: 'Adam Albarka',
+        text: "A Frontend Developer that pays great attention to detail and an efficient worker who prioritizes job completion and achieving deliverables."
     },
 
     {
@@ -223,28 +244,33 @@ export const testimonialData = [
     },
 ]
 
+export const testimonialLinks = [ 
+    {
+
+    }
+]
 
 export const contactData = [
     {
         id: 1,
         icon:  <MdOutlineEmail />,
         contctType: 'Email',
-        emailadrss: 'adams@gmail.com',
-        link: " mailto:adams.albarka@gmail.com"
+        emailadrss: 'ayotemitope930@gmail.com',
+        link: " mailto:ayotemitope930@gmail.com"
     },
     {
         id: 2,
         icon:  <FiTwitter />,
         contctType: 'Twitter',
-        emailadrss: '@Adams_albarka',
-        link: " https://twitter.com/adams_albarka "
+        emailadrss: '@Sib_tunechy',
+        link: " https://twitter.com/Sib_tunechy "
     },
     {
         id: 3,
         icon:  <BsWhatsapp />,
         contctType: 'WhatsApp',
-        emailadrss: "+2349036867997",
-        link: " https://api.whatsapp.com/send?phone=+2349036867997 "
+        emailadrss: "+2348135163128",
+        link: "https://api.whatsapp.com/send?phone=+2348135163128"
     },
 ]
 

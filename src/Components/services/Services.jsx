@@ -14,7 +14,7 @@ export default function Services() {
      <div className="container services__container">
       <article className='services'>
         <div className="service__head">
-          <h3>Writing</h3>
+          <h3>JavaScript</h3>
         </div>
     {servicesListWrite.map((item) => (
         <ul className="service__list">
@@ -28,7 +28,7 @@ export default function Services() {
 
       <article className='services'>
         <div className="service__head">
-          <h3> Web Programming </h3>
+          <h3> React JS Developer </h3>
         </div>
     {servicesListWeb.map((item) => (
         <ul className="service__list">
@@ -42,7 +42,7 @@ export default function Services() {
 
       <article className='services'>
         <div className="service__head">
-          <h3>Language Teaching</h3>
+          <h3>Node JS Developer</h3>
         </div>
     {servicesListTeach.map((item) => (
         <ul className="service__list">

@@ -7,8 +7,8 @@ import { BsFillJournalBookmarkFill } from 'react-icons/bs'
 export default function About() {
   return (
     <section className='about' id='about'>
-      <h5>Get to know Herr Adams</h5>
-      <h2>I write and speak 5 Languages</h2>
+      <h5>Get to know Ahmed</h5>
+      <h2>I write in JavaScript</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -30,9 +30,10 @@ export default function About() {
         </div>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Aperiam, deleniti in quasi incidunt assumenda ea eum? Numquam error amet accusamus, 
-          voluptate laudantium, nulla, saepe excepturi aliquid ipsum illum ipsam magni.
+        Throughout my career, I have contributed to impacting business outcomes
+        through effective organization, prioritization, and execution of key projects.
+        My skills and qualifications are an ideal match to the Front End Developer requirements 
+        and will bring immediate value to any company I become a part of.
         </p>
         
         <Button>
